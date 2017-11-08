@@ -8,8 +8,6 @@ Rails.application.routes.draw do
 
   get 'sessions/destroy'
 
-  get 'parqueos/change', to: "parqueos#change"
-
   resources :users
 
   get 'admin' => 'admin#index'

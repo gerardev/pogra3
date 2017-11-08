@@ -13,17 +13,12 @@
 
   <div class="field">
     <%= form.label :estado %>
-    <%= form.number_field :estado, id: :parqueo_estado %>
+    <%= form.check_box :estado, id: :parqueo_estado %>
   </div>
 
   <div class="field">
     <%= form.label :tipo %>
     <%= form.text_field :tipo, id: :parqueo_tipo %>
-  </div>
-
-  <div class="field">
-    <%= form.label :ide %>
-    <%= form.text_field :ide, id: :parqueo_ide %>
   </div>
 
   <div class="actions">
