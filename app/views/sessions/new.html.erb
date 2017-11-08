@@ -1,0 +1,40 @@
+
+<div class="block" id="block-login">
+    <div class = "container">
+      <div class="col-md-4 offset-md-4">
+        <h1>Inicio de sesión</h1>
+          <div class="flash">
+            <% flash.each do |type, message| %>
+                <div class="message notice">
+                  <p>
+                    <%= message %>
+                  </p>
+                </div>
+            <% end %>
+          </div>
+        <hr class="colorgraph"><br>
+          <%= form_tag do %>
+              <fieldset>
+                <div class="group wat-cf">
+                  <div class="left">
+                    <%= label_tag :name, 'Usuario:' %>
+                  </div>
+                  <div class="right">
+                    <%= text_field_tag :name, params[:name],  class: 'form-control' %>
+                  </div>
+                </div>
+                <div class="group wat-cf">
+                  <div class="left"><%= label_tag :password, 'Contraseña:' %></div>
+                  <div class="right"><%= password_field_tag :password, params[:password],  class: 'form-control' %></div>
+                </div>
+                <div class="group wat-cf">
+                  <div class="right"><div class="button"><%= submit_tag "Login", class: 'btn btn-lg btn-primary btn-block' %></div></div>
+                </div>
+              </fieldset>
+          <% end %>
+    </div>
+
+
+
+  </div>
+</div>
