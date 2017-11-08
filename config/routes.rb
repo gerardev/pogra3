@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :parqueos
   #get 'admin/index'
 
   #get 'sessions/new'
@@ -8,7 +9,6 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
   resources :users
-  resources :parqueos
 
   get 'admin' => 'admin#index'
   controller :sessions do

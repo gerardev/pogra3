@@ -17,7 +17,7 @@ class ParqueosControllerTest < ActionDispatch::IntegrationTest
 
   test "should create parqueo" do
     assert_difference('Parqueo.count') do
-      post parqueos_url, params: { parqueo: { estado: @parqueo.estado, fecha: @parqueo.fecha, tipo: @parqueo.tipo } }
+      post parqueos_url, params: { parqueo: { estado: @parqueo.estado, tipo: @parqueo.tipo } }
     end
 
     assert_redirected_to parqueo_url(Parqueo.last)
@@ -34,7 +34,7 @@ class ParqueosControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update parqueo" do
-    patch parqueo_url(@parqueo), params: { parqueo: { estado: @parqueo.estado, fecha: @parqueo.fecha, tipo: @parqueo.tipo } }
+    patch parqueo_url(@parqueo), params: { parqueo: { estado: @parqueo.estado, tipo: @parqueo.tipo } }
     assert_redirected_to parqueo_url(@parqueo)
   end
 

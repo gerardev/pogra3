@@ -7,7 +7,6 @@
     <tr>
       <th>Estado</th>
       <th>Tipo</th>
-      <th>Fecha</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -17,7 +16,6 @@
       <tr>
         <td><%= parqueo.estado %></td>
         <td><%= parqueo.tipo %></td>
-        <td><%= parqueo.fecha %></td>
         <td><%= link_to 'Show', parqueo %></td>
         <td><%= link_to 'Edit', edit_parqueo_path(parqueo) %></td>
         <td><%= link_to 'Destroy', parqueo, method: :delete, data: { confirm: 'Are you sure?' } %></td>

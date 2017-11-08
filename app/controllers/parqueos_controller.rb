@@ -69,6 +69,6 @@ class ParqueosController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def parqueo_params
-      params.require(:parqueo).permit(:estado, :tipo, :fecha)
+      params.require(:parqueo).permit(:estado, :tipo)
     end
 end
