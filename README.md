@@ -1,24 +1,14 @@
-# README
+# Programación III
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
+Integrantes:
 
-* Ruby version
+* Gerardo Antonio López Barrientos
+* Andrés de Jesús Chapeton Mata
+* Camila María Orantes Girón
+* Julio César Ábrego Gómez
+* Alfredo Antonio López Hernández 
 
-* System dependencies
+Docente:
+* Ing. Herson Serrano 
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
