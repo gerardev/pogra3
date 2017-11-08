@@ -6,10 +6,9 @@
         <hr class="colorgraph"><br>
           <div class="flash">
             <% flash.each do |type, message| %>
-                <div class="message notice">
-                  <p>
-                    <%= message %>
-                  </p>
+                <div class="alert alert-info">
+                  <a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+                  <%= message %>
                 </div>
             <% end %>
           </div>
@@ -29,10 +28,13 @@
                   <div class="right"><%= password_field_tag :password, params[:password],  class: 'form-control' %></div>
                 </div>
                 <div class="group wat-cf">
-                  <div class="right"><div class="button"><%= submit_tag "Login", class: 'btn btn-lg btn-primary btn-block' %></div></div>
+                  <div class="right"><div class="button"><%= submit_tag "Iniciar Sesión", class: 'btn btn-lg btn-primary btn-block' %></div></div>
                 </div>
               </fieldset>
           <% end %>
+        <div class="login-help">
+          <a href="users/new">¿Ya tienes una cuenta? Registrate</a>
+        </div>
     </div>
 
 
