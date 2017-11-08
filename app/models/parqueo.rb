@@ -1,0 +1,2 @@
+class Parqueo < ApplicationRecord
+end
