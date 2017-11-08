@@ -9,6 +9,9 @@ Integrantes:
 * Julio César Ábrego Gómez
 * Alfredo Antonio López Hernández 
 
+Asesor UX/UI:
+* Jorge Escalante
+
 Docente:
 * Ing. Herson Serrano 
 

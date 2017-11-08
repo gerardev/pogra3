@@ -2,7 +2,8 @@
 <div class="block" id="block-login">
     <div class = "container">
       <div class="col-md-4 offset-md-4">
-        <h1>Inicio de sesión</h1>
+        <h1 style="text-align: center;margin-top: 40%;">Inicio de sesión</h1>
+        <hr class="colorgraph"><br>
           <div class="flash">
             <% flash.each do |type, message| %>
                 <div class="message notice">
@@ -12,7 +13,7 @@
                 </div>
             <% end %>
           </div>
-        <hr class="colorgraph"><br>
+
           <%= form_tag do %>
               <fieldset>
                 <div class="group wat-cf">
