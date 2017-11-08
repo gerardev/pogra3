@@ -51,6 +51,15 @@ class ParqueosController < ApplicationController
     end
   end
 
+  def change
+    respond_to do |format|
+      if @parqueo.update( parqueo_params1)
+        format.html { redirect_to @parqueos, notice: 'Parqueo actualizado correctamente.' }
+        format.json { render :show, status: :ok, location: @parqueos}
+      end
+    end
+  end
+
   # DELETE /parqueos/1
   # DELETE /parqueos/1.json
   def destroy
@@ -70,5 +79,8 @@ class ParqueosController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def parqueo_params
       params.require(:parqueo).permit(:estado, :tipo)
+    end
+    def parqueo_params1
+      params.require(:parqueo).permit(:estado)
     end
 end
