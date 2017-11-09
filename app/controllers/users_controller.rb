@@ -1,6 +1,5 @@
 class UsersController < ApplicationController
   before_action :set_user, only: [:show, :edit, :update, :destroy]
-  skip_before_action :authorize, only: [:new, :create, :index]
   # GET /users
   # GET /users.json
   def index
@@ -31,7 +30,7 @@ class UsersController < ApplicationController
         format.html { redirect_to users_url, notice: 'User was successfully created.' }
         format.json { render :show, status: :created, location: @user }
       else
-        format.html { render :new }
+        format.html {  render action: 'new' }
         format.json { render json: @user.errors, status: :unprocessable_entity }
       end
     end
