@@ -1,0 +1,72 @@
+<p id="notice"><%= notice %></p>
+
+<div class="row">
+  <div class="col-sm-12"><h1 class="text-center">Parqueos</h1><hr class="colorgraph"><br></div>
+  <div class="col-md-5" style="">
+    <% @parqueos.each do |parqueo| %>
+        <% if parqueo.estado == true %>
+            <button type="button" class="btn btn-danger col-md-2 col-sm-3" style="margin-bottom: 20px;"><i class="fa fa-times"></i>
+            </button>
+        <% else %>
+            <button type="button" class="btn btn-success col-md-2 col-sm-3" style="margin-bottom: 20px;"><i class="fa fa-car"></i></button>
+        <% end %>
+
+    <% end %>
+    <br>
+    <%= link_to 'Registar nuevo parqueo', new_parqueo_path %>
+  </div>
+  <div class="col-md-4">
+    <div class="jumbotron text-center">
+      <h1>Siguiente</h1>
+      <br>
+      <h4><strong>Ticket: </strong>eqweqw</h4>
+      <h4><strong>Parqueo: </strong>#3</h4>
+      <br>
+      <br>
+      <button type="button" class="btn btn-info col-sm-3" style="margin-bottom: 20px;"><i class="fa fa-car"></i></button>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>#</th>
+        <th>Ticket</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>1</td>
+        <td>eqweqw</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>adfggd</td>
+      </tr>
+      <tr>
+        <td>3</td>
+        <td>asfdwr</td>
+      </tr>
+      <tr>
+        <td>4</td>
+        <td>xcvxcv</td>
+      </tr>
+      <tr>
+        <td>5</td>
+        <td>iyuisf</td>
+      </tr>
+      <tr>
+        <td>6</td>
+        <td>hjgsry</td>
+      </tr>
+      <tr>
+        <td>7</td>
+        <td>srtyrt</td>
+      </tr>
+
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<br>

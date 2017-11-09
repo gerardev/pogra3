@@ -1,0 +1,62 @@
+
+
+<%= form_for(@user1) do |f| %>
+    <% if @user1.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@user1.errors.count, "error") %> prohibited this user1 from being saved:</h2>
+
+          <ul>
+            <% @user1.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+    <div class="block" id="block-login">
+      <div class = "container">
+        <div class="col-md-4 offset-md-4">
+          <h1 style="text-align: center;margin-top: 40%;">Registro</h1>
+          <hr class="colorgraph"><br>
+
+          <%= form_tag do %>
+              <fieldset>
+                <div class="group wat-cf">
+                  <div class="field">
+                    <%= label_tag :name, 'Usuario:' %>
+                    <%= f.text_field :name, class: 'form-control' %>
+                  </div>
+                  <div class="field">
+                    <%= label_tag :email, 'Correo electrónico:' %>
+                    <%= f.text_field :email, class: 'form-control' %>
+                  </div>
+
+
+                  <div class="field">
+                    <%= f.label :password, 'Contraseña:' %>
+                    <%= f.password_field :password, class: 'form-control' %>
+                  </div>
+
+                  <div class="field">
+                    <%= f.label :password_confirmation, 'Confirmar contraseña:' %>
+                    <%= f.password_field :password_confirmation, class: 'form-control' %>
+                  </div>
+
+                  <div class="actions">
+                    <%= f.submit 'Registrar', :class => 'btn btn-lg btn-primary btn-block' %>
+                  </div>
+                </div>
+              </fieldset>
+          <% end %>
+          <div class="login-help">
+            <a href="/">¿Ya tienes una cuenta? Inicia sesión</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<% end %>
+
+
+
+
+
